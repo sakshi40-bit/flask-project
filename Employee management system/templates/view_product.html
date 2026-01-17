@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+<h2>Products List</h2>
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Stock</th>
+</tr>
+{% for p in products %}
+<tr>
+    <td>{{ p.id }}</td>
+    <td>{{ p.name }}</td>
+    <td>{{ p.price }}</td>
+    <td>{{ p.stock }}</td>
+</tr>
+{% endfor %}
+</table>
+<br>
+<a href="/add_product">Add Product</a> | <a href="/logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Course</th>
+    <th>Year</th>
+</tr>
+
+{% for s in students %}
+<tr>
+    <td>{{ s.id }}</td>
+    <td>{{ s.name }}</td>
+    <td>{{ s.course }}</td>
+    <td>{{ s.year }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/add_student">Add Student</a> |
+<a href="/logout">Logout</a>

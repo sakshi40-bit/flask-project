@@ -1,0 +1,27 @@
+body{
+    font-family:Arial;background:#f2f2f2
+}
+
+form,p{
+    background:white;
+    width:300px;
+    margin:10px auto;
+    padding:15px
+}
+
+input,button{
+    width:100%;
+    padding:8px;
+    margin:5px 0
+}
+
+button{
+    background:green;
+    color:white;
+    border:none
+}
+
+a{
+    text-decoration:none;
+    color:blue
+}

@@ -1,0 +1,10 @@
+<h2>Your Registered Exams</h2>
+<table border="1">
+<tr><th>Exam</th><th>Subject</th></tr>
+{% for e in exams %}
+<tr>
+<td>{{e.exam_name}}</td>
+<td>{{e.subject}}</td>
+</tr>
+{% endfor %}
+</table>
